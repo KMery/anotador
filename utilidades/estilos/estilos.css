@@ -1,0 +1,103 @@
+body {
+    background-color: #292b36;
+    font-family: 'Reggae One', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes changeBackground {
+    0%   {background-image: linear-gradient(-45deg, #80b6cf, #ad7bad, #80b6cf);}
+    25%  {background-image: linear-gradient(-45deg, #ad7bad, #80b6cf, #ad7bad, #80b6cf, #ad7bad);}
+    50%  {background-image: linear-gradient(-45deg, #80b6cf, #ad7bad, #80b6cf);}
+    75%  {background-image: linear-gradient(-45deg, #80b6cf, #ad7bad, #80b6cf, #ad7bad, #80b6cf);}   
+    100% {background-image: linear-gradient(-45deg,#ad7bad, #80b6cf, #ad7bad);}
+  }
+
+#anotador {
+    text-align: center;
+    /* padding arriba  derecha abajo izquierda*/
+    margin: 20px 0px 50px 0px;
+    width: 98%;
+    border-radius: 25px;
+    padding-bottom: 50px;
+    /* animation */
+    animation-duration: 1s;
+    animation-name: changeBackground;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+h1 {
+    color: #3e32a8;
+    font-size: 50px;
+}
+
+h2 {
+    color: #8f1d91;
+}
+
+/* #agregar_nota {
+
+} */
+
+/* Estilo caja texto */
+#nota_nueva {
+    min-width: 200px;
+    min-height: 100px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 25px;
+}
+
+.botones {
+    background-color: #97b8c7;
+    color: #2f1847;
+    font-size: 15px;
+    transition: background-color .5s;
+    min-width: 200px;
+    min-height: 40px;
+    font-family: 'Reggae One', cursive;
+    width: 80%;
+    border-radius: 25px;
+}
+
+.botones:hover {
+    background-color: #a756a8;
+    color: white;
+    font-size: 20px;
+}
+
+#mostrar_notas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin-left: 10px;
+    width: 25px;
+    transform: translateY(20px);
+}
+
+img:hover {
+    width: 40px;
+}
+
+#notas_guardadas {
+    font-family: 'Special Elite', cursive;
+    width: 80%;
+}
+
+.nota {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    margin: 0px 0px 10px 20px;
+}
+
+.nota:hover {
+    padding: 10px;
+    font-size: 25px;
+    border: 2px groove #2f1847;
+    border-radius: 25px;
+}
